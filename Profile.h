@@ -20,8 +20,6 @@ public:
     void setEmail(std::string mail);
 
     std::string displayProfile();
-
-
 };
 
 
