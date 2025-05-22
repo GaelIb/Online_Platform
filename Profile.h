@@ -11,15 +11,15 @@ protected:
 
 public:
     Profile();
-    Profile(std::string user, std::string mail);
-    
-    std::string getUsername();
-    std::string getEmail();
+    Profile(const std::string& _username, const std::string& _email);
 
-    void setUsername(std::string user);
-    void setEmail(std::string mail);
+    const std::string& getUsername() const;
+    const std::string& getEmail() const;
 
-    std::string displayProfile();
+    void setUsername(const std::string& _username);
+    void setEmail(const std::string& _email);
+
+    std::string displayProfile() const;
 };
 
 
