@@ -3,15 +3,15 @@
 
 #include <string>
 
-class Profile
+class User
 {
 protected:
     std::string username;
     std::string email;
 
 public:
-    Profile();
-    Profile(const std::string& _username, const std::string& _email);
+    User();
+    User(const std::string& _username, const std::string& _email);
 
     const std::string& getUsername() const;
     const std::string& getEmail() const;
@@ -26,4 +26,4 @@ public:
 
 
 
-#endif // PROFILE_H
+#endif // USER_H
