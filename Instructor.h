@@ -12,7 +12,7 @@ private:
 
 public:
     Instructor();
-    Instructor(string username, string email, std::string speciality, int coursesTaught);
+    Instructor(const std::string& username, const std::string& email, const std::string& speciality, int coursesTaught);
 
     std::string getSpeciality() const;
     int getCoursesTaught() const;
