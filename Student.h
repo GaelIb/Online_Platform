@@ -3,7 +3,7 @@
 #define STUDENT_H
 using namespace std;
 
-#include "Profile.h"  // Incluye la clase base
+#include "User.h"  // Incluye la clase base
 
 class Student : public Profile {
 private:
