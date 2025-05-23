@@ -12,6 +12,7 @@ protected:
 public:
     User();
     User(const std::string& _username, const std::string& _email);
+    User(const std::string& username, const std::string& email);
 
     const std::string& getUsername() const;
     const std::string& getEmail() const;
