@@ -3,9 +3,9 @@
 #define INSTRUCTOR_H
 
 #include <string>
-#include "Profile.h"
+#include "User.h"
 
-class Instructor : public Profile {
+class Instructor : public User {
 private:
     std::string Speciality;
     int CoursesTaught;
