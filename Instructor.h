@@ -21,7 +21,7 @@ public:
     void setCoursesTaught(int coursesTaught);
 
     virtual std::string displayProfile() const override;
-    std::string displayProfile(bool fullInfo) const override;
+    std::string displayProfile(bool fullInfo) const;
 };
 
 #endif
