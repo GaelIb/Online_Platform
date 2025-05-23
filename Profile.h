@@ -19,7 +19,7 @@ public:
     void setUsername(const std::string& _username);
     void setEmail(const std::string& _email);
 
-    std::string displayProfile() const;
+    virtual std::string displayProfile() const;
 };
 
 
