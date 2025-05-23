@@ -24,13 +24,13 @@ void Instructor::setCoursesTaught(int coursesTaught) {
 
 std::string Instructor::displayProfile() const {
     return "--- Instructor Profile ---\n" +
-           Profile::displayProfile() + "\n" +
+           User::displayProfile() + "\n" +
            "Specialty: " + Speciality;
 }
 
 std::string Instructor::displayProfile(bool fullInfo) const {
     std::string profile = "--- Instructor Profile ---\n" +
-                          Profile::displayProfile() + "\n" +
+                          User::displayProfile() + "\n" +
                           "Specialty: " + Speciality;
     if (fullInfo) {
         profile += "\nCourses Taught: " + std::to_string(CoursesTaught);
