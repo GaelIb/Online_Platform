@@ -3,10 +3,10 @@
 
 using namespace std;
 
-Student::Student() : Profile(), coursesEnrolled("") {}
+Student::Student() : User(), coursesEnrolled("") {}
 
 Student::Student(string username, string email, string courses)
-    : Profile(username, email), coursesEnrolled(courses) {}
+    : User(username, email), coursesEnrolled(courses) {}
 
 string Student::getCoursesEnrolled() const {
     return coursesEnrolled;
