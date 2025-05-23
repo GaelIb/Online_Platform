@@ -16,6 +16,7 @@ public:
     string getCoursesEnrolled() const;
     void setCoursesEnrolled(string courses);
 
-    string displayProfile() const override; 
+    virtual string displayProfile() const override; 
 };
 #endif
+
