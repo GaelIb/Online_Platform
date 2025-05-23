@@ -1,7 +1,7 @@
 #include "Instructor.h"
-#include <sstream>
+#include <iostream>
 
-Instructor::Instructor() : Speciality(""), CoursesTaught(0) {}
+Instructor::Instructor() : Speciality("None"), CoursesTaught(0) {}
 
 Instructor::Instructor(std::string speciality, int coursesTaught)
     : Speciality(speciality), CoursesTaught(coursesTaught) {}
@@ -23,22 +23,17 @@ void Instructor::setCoursesTaught(int coursesTaught) {
 }
 
 std::string Instructor::displayProfile() const {
-    std::ostringstream oss;
-    oss << "--- Instructor Profile ---\n";
-    oss << "Username: " << getUsername() << "\n";
-    oss << "Email: " << getEmail() << "\n";
-    oss << "Specialty: " << Speciality;
-    return oss.str();
+    return "--- Instructor Profile ---\n" +
+           Profile::displayProfile() + "\n" +
+           "Specialty: " + Speciality;
 }
 
 std::string Instructor::displayProfile(bool fullInfo) const {
-    std::ostringstream oss;
-    oss << "--- Instructor Profile ---\n";
-    oss << "Username: " << getUsername() << "\n";
-    oss << "Email: " << getEmail() << "\n";
-    oss << "Specialty: " << Speciality << "\n";
+    std::string profile = "--- Instructor Profile ---\n" +
+                          Profile::displayProfile() + "\n" +
+                          "Specialty: " + Speciality;
     if (fullInfo) {
-        oss << "Courses Taught: " << CoursesTaught;
+        profile += "\nCourses Taught: " + std::to_string(CoursesTaught);
     }
-    return oss.str();
+    return profile;
 }
