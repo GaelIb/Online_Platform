@@ -7,12 +7,6 @@ User::User() : username("None"), email("None") {}
 User::User(const std::string& _username, const std::string& _email)
     : username(_username), email(_email) {}
 
-User::User(const std::string& username, const std::string& email) {
-    // Initialize username and email fields here
-    // Example:
-    this->username = username;
-    this->email = email;
-}
 
 const std::string& User::getUsername() const {return username;}
 const std::string& User::getEmail() const {return email;}
