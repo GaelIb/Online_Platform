@@ -3,8 +3,8 @@
 
 Instructor::Instructor() : Speciality("None"), CoursesTaught(0) {}
 
-Instructor::Instructor(std::string speciality, int coursesTaught)
-    : Speciality(speciality), CoursesTaught(coursesTaught) {}
+Instructor::Instructor(std::string username, std::string email, std::string speciality, int coursesTaught)
+    : User(username, email), Speciality(speciality), CoursesTaught(coursesTaught) {}
 
 std::string Instructor::getSpeciality() const {
     return Speciality;
