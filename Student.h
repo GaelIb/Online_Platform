@@ -1,9 +1,10 @@
-
 #ifndef STUDENT_H
 #define STUDENT_H
-using namespace std;
 
+#include <string>
 #include "User.h"  // Incluye la clase base
+
+using namespace std;
 
 class Student : public User {
 private:
@@ -18,5 +19,6 @@ public:
 
     virtual string displayProfile() const override; 
 };
+
 #endif
 
