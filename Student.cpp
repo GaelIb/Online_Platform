@@ -16,7 +16,7 @@ void Student::setCoursesEnrolled(string courses) {
     coursesEnrolled = courses;
 }
 
-string Student::displayProfile() {
+string Student::displayProfile() const{
     string profile = "--- Student Profile ---\n";
     profile += "Username: " + getUsername() + "\n";
     profile += "Email: " + getEmail() + "\n";
