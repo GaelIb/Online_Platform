@@ -20,7 +20,7 @@ public:
     void setSpeciality(std::string speciality);
     void setCoursesTaught(int coursesTaught);
 
-    virtual std::string displayProfile() const override;
+    std::string displayProfile() const override;
     std::string displayProfile(bool fullInfo) const;
 };
 
