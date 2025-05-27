@@ -19,7 +19,7 @@ public:
     void setUsername(const std::string& _username);
     void setEmail(const std::string& _email);
 
-    virtual std::string displayProfile() = 0; // Pure virtual function for displaying profile
+    virtual std::string displayProfile() const = 0; // Pure virtual function for displaying profile
 };
 
 
