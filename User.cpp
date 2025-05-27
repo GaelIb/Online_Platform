@@ -13,8 +13,3 @@ const std::string& User::getEmail() const {return email;}
 
 void User::setUsername(const std::string& _username) {username = _username;}
 void User::setEmail(const std::string& _email) {email = _email;}
-
-std::string User::displayProfile() const
-{
-    return "Username: " + username + "\nEmail: " + email;
-}
